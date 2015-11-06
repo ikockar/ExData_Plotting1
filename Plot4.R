@@ -47,14 +47,16 @@ legend("topright", lty = c(1,1,1), col = c("black", "red", "blue"),
 
 ##########################################################################
 
-# plot graph into 2nd area (2nd col, 1nd row)
+# plot graph into 3rd area (2nd col, 1nd row)
 plot(strptime(paste(df$Date, df$Time), format="%d/%m/%Y %H:%M:%S"),
      df$Voltage,
      type="l",
      xlab="datetime",
      ylab="Voltage")
 
-# plot graph into 2nd area (2nd col, 2nd row)
+##########################################################################
+
+# plot graph into 4th area (2nd col, 2nd row)
 plot(strptime(paste(df$Date, df$Time), format="%d/%m/%Y %H:%M:%S"),
      df$Global_reactive_power,
      type="l",
