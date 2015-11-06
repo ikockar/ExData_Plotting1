@@ -18,6 +18,6 @@ plot(strptime(paste(df$Date, df$Time), format="%d/%m/%Y %H:%M:%S"),
      xlab="",
      ylab="Global Active Power (kilowatts)")
 
-# export histogram into file plot2.png
+# export graph into file plot2.png
 dev.copy(png,'plot2.png',  width = 480, height = 480)
 dev.off()
